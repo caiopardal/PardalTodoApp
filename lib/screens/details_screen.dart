@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_firestore_todos/blocs/todos/todos.dart';
-import 'package:flutter_firestore_todos/screens/screens.dart';
+import 'package:PardalTodo/blocs/todos/todos.dart';
+import 'package:PardalTodo/screens/screens.dart';
 
 class DetailsScreen extends StatelessWidget {
   final String id;

@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:flutter_firestore_todos/blocs/tab/tab.dart';
-import 'package:flutter_firestore_todos/models/models.dart';
+import 'package:PardalTodo/blocs/tab/tab.dart';
+import 'package:PardalTodo/models/models.dart';
 
 class TabBloc extends Bloc<TabEvent, AppTab> {
   @override

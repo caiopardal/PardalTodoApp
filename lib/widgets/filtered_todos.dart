@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_firestore_todos/blocs/blocs.dart';
-import 'package:flutter_firestore_todos/widgets/widgets.dart';
-import 'package:flutter_firestore_todos/screens/screens.dart';
+import 'package:PardalTodo/blocs/blocs.dart';
+import 'package:PardalTodo/widgets/widgets.dart';
+import 'package:PardalTodo/screens/screens.dart';
 
 class FilteredTodos extends StatelessWidget {
   FilteredTodos({Key key}) : super(key: key);

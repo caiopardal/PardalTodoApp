@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_firestore_todos/blocs/filtered_todos/filtered_todos.dart';
-import 'package:flutter_firestore_todos/models/models.dart';
+import 'package:PardalTodo/blocs/filtered_todos/filtered_todos.dart';
+import 'package:PardalTodo/models/models.dart';
 
 class FilterButton extends StatelessWidget {
   final bool visible;

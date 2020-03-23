@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_firestore_todos/blocs/authentication_bloc/bloc.dart';
+import 'package:PardalTodo/blocs/authentication_bloc/bloc.dart';
 import 'package:todos_repository/todos_repository.dart';
-import 'package:flutter_firestore_todos/blocs/blocs.dart';
-import 'package:flutter_firestore_todos/screens/screens.dart';
+import 'package:PardalTodo/blocs/blocs.dart';
+import 'package:PardalTodo/screens/screens.dart';
 import 'package:user_repository/user_repository.dart';
 
 void main() {
@@ -33,12 +33,12 @@ class TodosApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
-        title: 'Firestore Todos',
+        title: 'PardalTodos',
         routes: {
           '/': (context) {
             return BlocBuilder<AuthenticationBloc, AuthenticationState>(
               builder: (context, state) {
-                if (state is Authenticated) {
+                if (state is Unauthenticated) {
                   return MultiBlocProvider(
                     providers: [
                       BlocProvider<TabBloc>(
@@ -58,7 +58,7 @@ class TodosApp extends StatelessWidget {
                     child: HomeScreen(),
                   );
                 }
-                if (state is Unauthenticated) {
+                if (state is Authenticated) {
                   return Center(
                     child: Text('Could not authenticate with Firestore'),
                   );

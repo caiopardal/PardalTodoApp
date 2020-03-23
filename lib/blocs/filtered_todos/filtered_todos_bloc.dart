@@ -2,9 +2,9 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 import 'package:todos_repository/todos_repository.dart';
-import 'package:flutter_firestore_todos/blocs/filtered_todos/filtered_todos.dart';
-import 'package:flutter_firestore_todos/blocs/todos/todos.dart';
-import 'package:flutter_firestore_todos/models/models.dart';
+import 'package:PardalTodo/blocs/filtered_todos/filtered_todos.dart';
+import 'package:PardalTodo/blocs/todos/todos.dart';
+import 'package:PardalTodo/models/models.dart';
 
 class FilteredTodosBloc extends Bloc<FilteredTodosEvent, FilteredTodosState> {
   final TodosBloc _todosBloc;

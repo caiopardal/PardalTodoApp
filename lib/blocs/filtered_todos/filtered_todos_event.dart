@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:todos_repository/todos_repository.dart';
-import 'package:flutter_firestore_todos/models/models.dart';
+import 'package:PardalTodo/models/models.dart';
 
 abstract class FilteredTodosEvent extends Equatable {
   const FilteredTodosEvent();

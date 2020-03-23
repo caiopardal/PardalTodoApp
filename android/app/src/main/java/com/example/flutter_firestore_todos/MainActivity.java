@@ -1,4 +1,4 @@
-package com.example.flutter_firestore_todos_pardal;
+package com.example.PardalTodo;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

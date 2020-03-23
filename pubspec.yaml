@@ -1,5 +1,5 @@
-name: flutter_firestore_todos
-description: A new Flutter project.
+name: PardalTodo
+description: A flutter project that simulates a todo list for Pardal.
 
 version: 1.0.0+1
 
@@ -9,13 +9,30 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_bloc:
-    path: ../../packages/flutter_bloc
+  flutter_bloc: ^3.2.0
   todos_repository:
     path: todos_repository
   user_repository:
     path: user_repository
-  equatable: ^1.0.0
+  equatable: ^1.1.0
+
+dev_dependencies:
+  firebase_core: ^0.4.4+3
+  flutter_native_splash: ^0.1.9
+  flutter_launcher_icons: "^0.7.4"
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/splash.png
+    - assets/icon/icon.png 
+
+flutter_native_splash:
+  image: assets/images/splash.png
+  color: "#4B0082"
+
+flutter_icons:
+  android: "launcher_icon" 
+  ios: true
+  image_path: "assets/icon/icon.png"

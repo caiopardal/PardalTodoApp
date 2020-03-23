@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:flutter_firestore_todos/blocs/blocs.dart';
+import 'package:PardalTodo/blocs/blocs.dart';
 
 class StatsBloc extends Bloc<StatsEvent, StatsState> {
   StreamSubscription _todosSubscription;

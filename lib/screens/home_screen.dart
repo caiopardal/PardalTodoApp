@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_firestore_todos/blocs/blocs.dart';
-import 'package:flutter_firestore_todos/widgets/widgets.dart';
-import 'package:flutter_firestore_todos/models/models.dart';
+import 'package:PardalTodo/blocs/blocs.dart';
+import 'package:PardalTodo/widgets/widgets.dart';
+import 'package:PardalTodo/models/models.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
       builder: (context, activeTab) {
         return Scaffold(
           appBar: AppBar(
-            title: Text('Firestore Todos'),
+            title: Text('Pardal Todos'),
             actions: [
               FilterButton(visible: activeTab == AppTab.todos),
               ExtraActions(),
